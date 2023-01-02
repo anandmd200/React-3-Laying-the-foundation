@@ -1,0 +1,7 @@
+# auto generated file on server
+node_modules/
+dist/
+.parcel-cache
+
+
+
