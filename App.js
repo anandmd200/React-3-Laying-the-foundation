@@ -1,29 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-/**
- * HMR = HOT Module Replacement
- *
- */
-
-// const heading1 = React.createElement(
-//   "h1",
-//   {
-//     id: "title",
-//     hello: "world",
-//   },
-//   "Hello React from Ignite"
-// );
-
-// const heading2 = React.createElement(
-//   "h1",
-//   {
-//     id: "heading2",
-//     className: "hello",
-//   },
-//   "Hello React"
-// );
-
 const container = React.createElement(
   "div",
   {
@@ -38,15 +15,24 @@ const container = React.createElement(
     },
     "Hello React"
   ), React.createElement(
-    "h1",
+    "h2",
     {
       key:" title2",
       id: "heading2",
       className: "hello",
     },
-    "Hello React"
+    "Hello React from h2"
+  ),, React.createElement(
+    "h3",
+    {
+      key:"title3",
+      id: "heading3",
+    },
+    "Hello React from h3"
   )]
 );
+
+console.log(container);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(container);

@@ -1,0 +1,9 @@
+// with options only remove console log but keep error and warn 
+// {
+//   "plugins": [["transform-remove-console", 
+//   { "exclude": ["error", "warn","console"] }]]
+// }
+
+{
+    "plugins": []
+}
