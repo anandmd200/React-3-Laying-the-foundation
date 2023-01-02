@@ -6,30 +6,46 @@ import ReactDOM from "react-dom/client";
  *
  */
 
-const heading1 = React.createElement(
-  "h1",
-  {
-    id: "title",
-    hello: "world",
-  },
-  "Hello React from Ignite"
-);
+// const heading1 = React.createElement(
+//   "h1",
+//   {
+//     id: "title",
+//     hello: "world",
+//   },
+//   "Hello React from Ignite"
+// );
 
-const heading2 = React.createElement(
-  "h1",
-  {
-    id: "heading2",
-    className: "hello",
-  },
-  "Hello React"
-);
+// const heading2 = React.createElement(
+//   "h1",
+//   {
+//     id: "heading2",
+//     className: "hello",
+//   },
+//   "Hello React"
+// );
 
 const container = React.createElement(
   "div",
   {
     id: "container",
   },
-  [heading1, heading2]
+  [React.createElement(
+    "h1",
+    {
+      key:" title",
+      id: "heading2",
+      className: "hello",
+    },
+    "Hello React"
+  ), React.createElement(
+    "h1",
+    {
+      key:" title2",
+      id: "heading2",
+      className: "hello",
+    },
+    "Hello React"
+  )]
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
