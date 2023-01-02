@@ -1,23 +1,41 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading1 = React.createElement(
-  "h1",
-  {className:"title"},
-  "Hello React"
-);
-  
-
 const heading = (
   <h1 className="title" key="myheading">
     Hello world
   </h1>
 );
 
-const age = 24;
-const element = <h1>Rahul is now, {age}!,year old</h1>;
+/**
+ * Component
+ * 1. Functional component
+ * 2. Class component
+ */
 
-console.log(heading);
+const Welcome = () => {
+  return <h1>Welcome to React world</h1>;
+};
+
+/**
+ * here heading is a react element and if you see it is like a js variable.
+ * inside curley braces you can write any peacie of javaScript
+ */
+
+const HeaderComponent = function(){
+  return (
+    <div>
+      {heading}                            
+      <Welcome />  
+      {Welcome()}
+      {console.log(1+2)}
+      <h1>Hello from Functional component</h1>
+      <h2>heading 2</h2>
+    </div>
+  );
+};
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading1);
+// root.render(<Welcome />);
+root.render(<HeaderComponent />);
