@@ -1,38 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const container = React.createElement(
-  "div",
-  {
-    id: "container",
-  },
-  [React.createElement(
-    "h1",
-    {
-      key:" title",
-      id: "heading2",
-      className: "hello",
-    },
-    "Hello React"
-  ), React.createElement(
-    "h2",
-    {
-      key:" title2",
-      id: "heading2",
-      className: "hello",
-    },
-    "Hello React from h2"
-  ),, React.createElement(
-    "h3",
-    {
-      key:"title3",
-      id: "heading3",
-    },
-    "Hello React from h3"
-  )]
+const heading1 = React.createElement(
+  "h1",
+  {className:"title"},
+  "Hello React"
+);
+  
+
+const heading = (
+  <h1 className="title" key="myheading">
+    Hello world
+  </h1>
 );
 
-console.log(container);
+const age = 24;
+const element = <h1>Rahul is now, {age}!,year old</h1>;
+
+console.log(heading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);
+root.render(heading1);
