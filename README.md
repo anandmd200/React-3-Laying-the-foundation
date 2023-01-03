@@ -142,7 +142,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<HeaderComponent />);
 ```
 
-### `Power of JSX` what if someone able to run JavaScript in you system.
+### `Power of JSX` what if someone able to run JavaScript code in your system.
 He will able get more informatiom of your system like, your ip-address, passwords,
 and can hack your system. but JSX is secure in this matter.
 
